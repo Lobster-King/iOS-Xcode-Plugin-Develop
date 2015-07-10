@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		643EB86C1B429C98004881CB /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643EB86B1B429C98004881CB /* AppKit.framework */; };
+		643EB86E1B429C98004881CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643EB86D1B429C98004881CB /* Foundation.framework */; };
+		643EB8731B429C98004881CB /* SyswinPlugin.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 643EB8721B429C98004881CB /* SyswinPlugin.xcscheme */; };
+		643EB8761B429C98004881CB /* SyswinPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 643EB8751B429C98004881CB /* SyswinPlugin.m */; };
+		64BC91151B42A05F00FC02C1 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 64BC91141B42A05F00FC02C1 /* NSObject+Swizzling.m */; };
+		64BC91181B42A1BC00FC02C1 /* NSObject+DVTBezelAlertPanelSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 64BC91171B42A1BC00FC02C1 /* NSObject+DVTBezelAlertPanelSwizzling.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		643EB8681B429C98004881CB /* SyswinPlugin.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyswinPlugin.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		643EB86B1B429C98004881CB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		643EB86D1B429C98004881CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		643EB8711B429C98004881CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		643EB8721B429C98004881CB /* SyswinPlugin.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = SyswinPlugin.xcscheme; path = SyswinPlugin.xcodeproj/xcshareddata/xcschemes/SyswinPlugin.xcscheme; sourceTree = SOURCE_ROOT; };
+		643EB8741B429C98004881CB /* SyswinPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyswinPlugin.h; sourceTree = "<group>"; };
+		643EB8751B429C98004881CB /* SyswinPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyswinPlugin.m; sourceTree = "<group>"; };
+		64BC91131B42A05F00FC02C1 /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		64BC91141B42A05F00FC02C1 /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		64BC91161B42A1BC00FC02C1 /* NSObject+DVTBezelAlertPanelSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DVTBezelAlertPanelSwizzling.h"; sourceTree = "<group>"; };
+		64BC91171B42A1BC00FC02C1 /* NSObject+DVTBezelAlertPanelSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DVTBezelAlertPanelSwizzling.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		643EB8661B429C98004881CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643EB86C1B429C98004881CB /* AppKit.framework in Frameworks */,
+				643EB86E1B429C98004881CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		643EB85F1B429C98004881CB = {
+			isa = PBXGroup;
+			children = (
+				643EB86F1B429C98004881CB /* SyswinPlugin */,
+				643EB86A1B429C98004881CB /* Frameworks */,
+				643EB8691B429C98004881CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		643EB8691B429C98004881CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				643EB8681B429C98004881CB /* SyswinPlugin.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		643EB86A1B429C98004881CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				643EB86B1B429C98004881CB /* AppKit.framework */,
+				643EB86D1B429C98004881CB /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		643EB86F1B429C98004881CB /* SyswinPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				643EB8741B429C98004881CB /* SyswinPlugin.h */,
+				643EB8751B429C98004881CB /* SyswinPlugin.m */,
+				643EB8701B429C98004881CB /* Supporting Files */,
+				64BC91131B42A05F00FC02C1 /* NSObject+Swizzling.h */,
+				64BC91141B42A05F00FC02C1 /* NSObject+Swizzling.m */,
+				64BC91161B42A1BC00FC02C1 /* NSObject+DVTBezelAlertPanelSwizzling.h */,
+				64BC91171B42A1BC00FC02C1 /* NSObject+DVTBezelAlertPanelSwizzling.m */,
+			);
+			path = SyswinPlugin;
+			sourceTree = "<group>";
+		};
+		643EB8701B429C98004881CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				643EB8711B429C98004881CB /* Info.plist */,
+				643EB8721B429C98004881CB /* SyswinPlugin.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		643EB8671B429C98004881CB /* SyswinPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 643EB8791B429C98004881CB /* Build configuration list for PBXNativeTarget "SyswinPlugin" */;
+			buildPhases = (
+				643EB8641B429C98004881CB /* Sources */,
+				643EB8651B429C98004881CB /* Resources */,
+				643EB8661B429C98004881CB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SyswinPlugin;
+			productName = SyswinPlugin;
+			productReference = 643EB8681B429C98004881CB /* SyswinPlugin.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		643EB8601B429C98004881CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = syswin;
+				TargetAttributes = {
+					643EB8671B429C98004881CB = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 643EB8631B429C98004881CB /* Build configuration list for PBXProject "SyswinPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 643EB85F1B429C98004881CB;
+			productRefGroup = 643EB8691B429C98004881CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				643EB8671B429C98004881CB /* SyswinPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		643EB8651B429C98004881CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643EB8731B429C98004881CB /* SyswinPlugin.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		643EB8641B429C98004881CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643EB8761B429C98004881CB /* SyswinPlugin.m in Sources */,
+				64BC91151B42A05F00FC02C1 /* NSObject+Swizzling.m in Sources */,
+				64BC91181B42A1BC00FC02C1 /* NSObject+DVTBezelAlertPanelSwizzling.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		643EB8771B429C98004881CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		643EB8781B429C98004881CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		643EB87A1B429C98004881CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = SyswinPlugin/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		643EB87B1B429C98004881CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = SyswinPlugin/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		643EB8631B429C98004881CB /* Build configuration list for PBXProject "SyswinPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643EB8771B429C98004881CB /* Debug */,
+				643EB8781B429C98004881CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		643EB8791B429C98004881CB /* Build configuration list for PBXNativeTarget "SyswinPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643EB87A1B429C98004881CB /* Debug */,
+				643EB87B1B429C98004881CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 643EB8601B429C98004881CB /* Project object */;
+}
